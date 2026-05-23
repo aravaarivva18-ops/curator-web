@@ -1295,8 +1295,13 @@ a { text-decoration: none; color: inherit; }
   }
 
   .hero-visual {
+    display: block;
     height: auto;
     margin-top: 2.5rem;
+  }
+
+  .expert-image-container {
+    margin: 0 auto;
   }
 
   .geo-composition {
