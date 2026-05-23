@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CURATOR.DEV — Разработка премиальных сайтов и воронки продаж для экспертов</title>
+  <meta name="description" content="Разработка высококонверсионных сайтов, премиального дизайна и автоворонок продаж для экспертов, инфобизнеса и онлайн-школ. Смысловая упаковка бизнеса, AEO-оптимизация и ROI-маркетинг.">
+  <meta name="keywords" content="разработка сайтов для экспертов, упаковка онлайн школы, заказать премиальный сайт, автоворонка продаж под ключ, конверсия сайта, AEO оптимизация, маркетинг для экспертов">
+  <link rel="canonical" href="https://curator.dev/">
+
+  <!-- Crawl Directives for SEO & AI Engines -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="yandex" content="index, follow">
+
+  <!-- Security Header (CSP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://fonts.googleapis.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com https://cdn.fontshare.com; font-src 'self' https://fonts.gstatic.com https://api.fontshare.com https://cdn.fontshare.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io;">
+
+  <meta name="theme-color" content="#FAFAFA">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://curator.dev/">
+  <meta property="og:title" content="CURATOR.DEV — Премиальные сайты и воронки для экспертов">
+  <meta property="og:description" content="Упаковываем ваш опыт в прибыльные автономные системы продаж.">
+  <meta property="og:image" content="https://curator.dev/og-preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="CURATOR.DEV — Премиальные сайты и воронки для экспертов">
+  <meta property="twitter:description" content="Проектируем воронки продаж и конверсионный дизайн нового поколения.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- PWA & Web App -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- AI Agent Discovery (Vision 2026) -->
+  <link rel="ai-agent-manifest" href="/.well-known/ai-agent-manifest.json">
+
+  <!-- JSON-LD Structured Data (Enhanced for 2026 Agents) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Curator.dev",
+    "alternateName": "Куратор.дев",
+    "image": "https://curator.dev/logo.png",
+    "description": "Разработка премиальных сайтов, смысловая упаковка инфобизнеса и проектирование автоворонок продаж в Москве, Санкт-Петербурге и по всей России.",
+    "isAccessibleForFree": "false",
+    "serviceType": [
+      "Web Development",
+      "Expert Experience Packaging",
+      "Sales Funnel Architecture",
+      "Marketing Strategy",
+      "AEO Optimization"
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "RUB",
+      "lowPrice": "150000",
+      "highPrice": "1000000",
+      "offerCount": "5",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Person",
+        "name": "Ruslan Gilfanov"
+      }
+    },
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Москва",
+        "addressRegion": "MSK",
+        "addressCountry": "RU"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Санкт-Петербург",
+        "addressRegion": "SPB",
+        "addressCountry": "RU"
+      }
+    ],
+    "url": "https://curator.dev/",
+    "telephone": "+7 (999) 000-00-00",
+    "priceRange": "₽₽₽",
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Москва"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Санкт-Петербург"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Россия"
+      }
+    ],
+    "sameAs": [
+      "https://t.me/curator_dev"
+    ],
+    "potentialAction": {
+      "@type": "Action",
+      "name": "Book Consultation",
+      "target": "https://curator.dev/#contact"
+    }
+  }
+  </script>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/imask" defer></script>
+  <script src="adaptive-ui.js" defer></script>
+  <script src="webgpu-fx.js" defer></script>
+  <script src="ai-audit.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation — Floating Island -->
+  <header class="header">
+    <div class="nav-island">
+      <a href="#" class="logo" aria-label="Curator.dev — главная страница">
+        <svg width="140" height="28" viewBox="0 0 140 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+          <text x="0" y="22" font-family="Outfit, sans-serif" font-weight="800" font-size="20" fill="#0A0A0A" letter-spacing="-0.04em">CURATOR</text>
+          <text x="97" y="22" font-family="Outfit, sans-serif" font-weight="400" font-size="20" fill="var(--accent)">.dev</text>
+        </svg>
+      </a>
+      <nav class="nav-links" aria-label="Главная навигация">
+        <div class="nav-geo-status" title="Локальное время">
+          <span class="geo-status-indicator"></span>
+          <span id="geoTime">00:00 MSK</span>
+        </div>
+        <a href="#services" class="nav-link">Услуги</a>
+        <a href="#process" class="nav-link">Процесс</a>
+        <a href="#contact" class="nav-link nav-link--cta">Заказать проект</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="label-pill">Performance & Status</span>
+          <h1 class="hero-title">
+            Сайты, которые окупаются до того, как вы 
+            <span class="inline-decor">
+              <svg width="60" height="20" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="6" width="40" height="8" rx="4" fill="var(--accent)" opacity="0.2"/>
+                <circle cx="50" cy="10" r="5" stroke="var(--accent)" stroke-width="2"/>
+              </svg>
+            </span>
+            закончите запуск
+          </h1>
+          <p class="hero-description">Curator.dev — это агентство смысловой упаковки и разработки премиальных веб-интерфейсов, создающее автономные системы продаж для экспертов и онлайн-школ с прогнозируемой окупаемостью (ROI) от 180% до 320% на первом запуске.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary magnetic-btn">Забронировать стратегию <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="expert-image-container">
+            <img src="expert-photo.webp" alt="Эксперт по продающим воронкам" class="expert-photo" loading="lazy">
+            <div class="expert-badge">
+              <span class="badge-dot"></span>
+              <span class="badge-text">ROI-Driven Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sales Pillars Section -->
+    <section id="methodology" class="authority-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="label-pill">The Methodology</span>
+          <h2>Методология Curator: <br><span class="text-accent">ROI-архитектура</span></h2>
+          <p class="section-subtitle">Ваш сайт — не просто визитка, а автономный инструмент продаж, оптимизированный под поведение современных клиентов и поисковые ИИ-алгоритмы.</p>
+        </div>
+        
+        <div class="authority-grid">
+          <div class="authority-card reveal">
+            <div class="authority-indicator"></div>
+            <h3>Визуальный статус</h3>
+            <p>Дизайн в премиум-сегменте — это фильтр доверия. Исследование Nielsen Norman Group подтверждает: пользователи формируют отношение к бренду за 0.05 секунды. Мы проектируем интерфейсы, снижающие показатель отказов (bounce rate) на 15-20% за счет выверенной сетки и типографики.</p>
+          </div>
+          <div class="authority-card reveal">
+            <div class="authority-indicator"></div>
+            <h3>Смысловая упаковка</h3>
+            <p>Смысловая упаковка — это инструмент конверсии опыта эксперта в понятные смыслы. По данным Harvard Business Review, смысловая сегментация предложения на основе CusDev-интервью поднимает продажи на 40%. Мы создаем CJM и отстраиваем вас от конкурентов.</p>
+          </div>
+          <div class="authority-card reveal">
+            <div class="authority-indicator"></div>
+            <h3>AEO & AI-оптимизация</h3>
+            <p>AEO (AI Engine Optimization) — это технология оптимизации контента под ИИ-агентов. Исследование Georgia Tech (2024) показывает, что семантически структурированные данные повышают вероятность рекомендаций в ChatGPT и Gemini на 30-115%.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Strip -->
+    <section class="proof-strip">
+      <div class="container">
+        <div class="proof-grid reveal">
+          <div class="proof-item">
+            <span class="proof-number">500+</span>
+            <span class="proof-label">млн ₽ выручки клиентов</span>
+          </div>
+          <div class="proof-item">
+            <span class="proof-number">×2.5</span>
+            <span class="proof-label">средний рост конверсии</span>
+          </div>
+          <div class="proof-item">
+            <span class="proof-number">14 дней</span>
+            <span class="proof-label">средний срок упаковки</span>
+          </div>
+          <div class="proof-item">
+            <span class="proof-number">98%</span>
+            <span class="proof-label">индекс лояльности клиентов</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section (Bento) -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="label-pill">Услуги</span>
+          <h2>Создаем системы, <br><span class="text-accent">которые продают</span></h2>
+        </div>
+        
+        <div class="bento-grid">
+          <article class="bento-item bento-item--large reveal">
+            <div class="bento-header">
+              <span class="label">Architecture</span>
+              <h3>Смысловая упаковка и воронка</h3>
+            </div>
+            <div class="bento-body">
+              <p>Создаем фундамент вашей воронки. От анализа аудитории до формирования офферов, от которых невозможно отказаться.</p>
+              <ul class="bento-list bento-list--grid">
+                <li>— Глубинные интервью (CusDev)</li>
+                <li>— Проектирование CJM</li>
+                <li>— Смысловая матрица проекта</li>
+                <li>— Разработка Big Idea и УТП</li>
+                <li>— Копирайтинг офферов</li>
+                <li>— План масштабирования</li>
+              </ul>
+            </div>
+          </article>
+          
+          <article class="bento-item reveal">
+            <span class="label">Visual</span>
+            <div class="bento-body">
+              <h3>Конверсионный Design</h3>
+              <p>Чистая эстетика, которая не просто радует глаз, а ведет клиента к покупке, подтверждая ваш статус и высокий чек.</p>
+              <ul class="bento-list bento-list--small">
+                <li>— Дизайн-системы</li>
+                <li>— UX-проектирование</li>
+              </ul>
+            </div>
+          </article>
+          
+          <article class="bento-item reveal">
+            <span class="label">Authority</span>
+            <div class="bento-body">
+              <h3>Digital-Авторитет</h3>
+              <p>Создаем присутствие, которое невозможно игнорировать. Вас рекомендуют, за вами следят.</p>
+              <ul class="bento-list bento-list--small">
+                <li>— Brand-Storytelling</li>
+                <li>— Управление охватами</li>
+              </ul>
+            </div>
+          </article>
+          
+          <article class="bento-item bento-item--wide bento-item--table reveal">
+            <span class="label">AEO vs Traditional</span>
+            <div class="bento-header">
+              <h3>Сравнение эффективности</h3>
+            </div>
+            <div class="bento-body table-container">
+              <table class="aeo-table">
+                <thead>
+                  <tr>
+                    <th>Показатель</th>
+                    <th>Обычный сайт</th>
+                    <th>Curator AEO-Engine</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Скорость (LCP)</td>
+                    <td>3.5с – 5.2с</td>
+                    <td class="text-accent">0.8с (мгновенно)</td>
+                  </tr>
+                  <tr>
+                    <td>ИИ-Индексация</td>
+                    <td>Игнорируется</td>
+                    <td class="text-accent">Да (манифест + схема)</td>
+                  </tr>
+                  <tr>
+                    <td>Конверсия (ROI)</td>
+                    <td>Около 1.2%</td>
+                    <td class="text-accent">Прогноз от 180%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="cases-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="label-pill">Кейсы</span>
+          <h2>Цифры и реальные результаты</h2>
+        </div>
+        <div class="cases-grid">
+          <div class="case-card reveal">
+            <div class="case-header">
+              <span class="case-category">EdTech</span>
+              <h3>Запуск онлайн-школы вокала</h3>
+            </div>
+            <div class="case-body">
+              <p>Создана воронка через квиз и продающий лендинг. Упакован личный бренд эксперта.</p>
+              <div class="case-stats">
+                <div class="stat"><span class="stat-val">2.5%</span><span class="stat-desc">конверсия в оплату</span></div>
+                <div class="stat"><span class="stat-val">10 дней</span><span class="stat-desc">срок реализации</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="case-card reveal">
+            <div class="case-header">
+              <span class="case-category">B2B Консалтинг</span>
+              <h3>Система лидогенерации для юристов</h3>
+            </div>
+            <div class="case-body">
+              <p>Разработка сложного веб-сервиса и посадочной страницы с глубокой аналитикой.</p>
+              <div class="case-stats">
+                <div class="stat"><span class="stat-val">50+</span><span class="stat-desc">лидов ежемесячно</span></div>
+                <div class="stat"><span class="stat-val">-40%</span><span class="stat-desc">цена клика (CPC)</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="label-pill">До / После</span>
+          <h2>Новая реальность вашего бизнеса</h2>
+        </div>
+        
+        <div class="results-list">
+          <div class="results-row reveal">
+            <div class="results-number">01</div>
+            <div class="results-content">
+              <h3>Премиальное позиционирование</h3>
+              <p>Ваше предложение выглядит дороже конкурентов за счет глубоких смыслов и чистого дизайна. Клиент платит за ваш статус.</p>
+            </div>
+          </div>
+          <div class="results-row reveal">
+            <div class="results-number">02</div>
+            <div class="results-content">
+              <h3>Автопилот продаж</h3>
+              <p>Сайт и бот закрывают 80% типовых вопросов. Вы общаетесь только с теми, кто уже готов к покупке.</p>
+            </div>
+          </div>
+          <div class="results-row reveal">
+            <div class="results-number">03</div>
+            <div class="results-content">
+              <h3>Иммунитет к конкуренции</h3>
+              <p>Пока другие демпингуют, вы растете, потому что ваш бренд построен на твердом фундаменте и уникальных смыслах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="label-pill">Метод</span>
+          <h2>Как мы создаем результат</h2>
+        </div>
+        
+        <div class="process-list">
+          <div class="process-item reveal">
+            <div class="process-marker">01</div>
+            <div class="process-body">
+              <h3>Раскопка смыслов</h3>
+              <p>Мы находим ту самую «суперсилу», за которую вам готовы платить в 5 раз больше рынка.</p>
+            </div>
+          </div>
+          <div class="process-item reveal">
+            <div class="process-marker">02</div>
+            <div class="process-body">
+              <h3>Проектирование захвата</h3>
+              <p>Создаем путь пользователя, где каждый скролл приближает его к решению «Хочу работать только с ними».</p>
+            </div>
+          </div>
+          <div class="process-item reveal">
+            <div class="process-marker">03</div>
+            <div class="process-body">
+              <h3>Digital-реализация</h3>
+              <p>Сборка системы на чистом коде: максимальная скорость загрузки и безупречная работа на любом устройстве.</p>
+            </div>
+          </div>
+          <div class="process-item reveal">
+            <div class="process-marker">04</div>
+            <div class="process-body">
+              <h3>Внедрение в экосистему ИИ</h3>
+              <p>Запуск и масштабирование воронки. Ваш бизнес начинает жить новой жизнью с системным потоком клиентов.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-pill">Q&A</span>
+          <h2>Проясним детали</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Чем ваш сайт отличается от обычного лендинга?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Обычный лендинг — это просто картинка. Наш сайт — это выверенная система продаж с глубокой смысловой проработкой, премиальным дизайном и скрытой технологической оптимизацией для доминирования в поиске и нейросетях.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>У меня уже есть сайт на Tilda/WordPress. Что делать?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>Мы можем провести аудит и рефакторинг текущей воронки. Если техническая база ограничивает рост — перенесем проект на чистом коде для максимальной скорости и конверсии.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Как быстро я увижу результат?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p>За счет смысловой упаковки и высокой скорости загрузки конверсия начинает расти сразу после запуска трафика. Первые лиды обычно приходят в первые 24–48 часов.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="demo-section">
+      <div class="container">
+        <div class="demo-grid reveal">
+          <div class="demo-info">
+            <span class="label-pill">Interactive Audit</span>
+            <h2 class="section-title">Аудит вашей воронки за <br><span class="text-accent">60 секунд</span></h2>
+            <p>Наш ИИ-ассистент проанализирует ваши текущие показатели и предложит 3 точки роста конверсии, которые можно внедрить уже завтра.</p>
+            <div class="demo-features">
+              <div class="demo-feature">
+                <span class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </span>
+                <span>Мгновенный расчет ROI</span>
+              </div>
+              <div class="demo-feature">
+                <span class="feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </span>
+                <span>Поиск узких мест в воронке</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="demo-window">
+            <div class="window-header">
+              <div class="window-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="window-title">Conversion Audit Bot</div>
+            </div>
+            <div class="window-body" id="auditTerminal">
+              <div class="terminal-line">>> System ready...</div>
+              <div class="terminal-line">>> Waiting for project URL or parameters...</div>
+              <div class="terminal-cursor"></div>
+            </div>
+            <div class="window-footer">
+              <input type="text" id="auditInput" placeholder="Введите ваш сайт или оффер..." aria-label="Ввод для аудита">
+              <button id="runAudit" class="btn-send">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-container">
+        <div class="cta-card reveal">
+          <span class="label-pill">Action</span>
+          <h2>Ваш следующий запуск станет рекордным</h2>
+          <p>Оставьте контакты для разработки стратегии упаковки. Мы наметим план превращения вашего опыта в прибыльный актив.</p>
+        </div>
+        
+        <div class="form-card reveal">
+          <form id="leadForm" action="https://formspree.io/f/mqaebrda" method="POST">
+            <div class="form-group visually-hidden">
+              <label for="website_hp">Оставьте это поле пустым</label>
+              <input type="text" id="website_hp" name="website_hp" tabindex="-1" autocomplete="off">
+              <input type="hidden" id="audit_data" name="audit_data" value="">
+            </div>
+            <div class="form-group">
+              <label for="name">Имя эксперта</label>
+              <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" autocomplete="name" required>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="phone">Ваш телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+              </div>
+              <div class="form-group">
+                <label for="messenger">Telegram для связи</label>
+                <input type="text" id="messenger" name="messenger" placeholder="@username">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="task">Ваша ниша или продукт</label>
+              <textarea id="task" name="task" placeholder="Например: Психология отношений, онлайн-курс за 50к" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Получить стратегию продаж <span class="btn-arrow">→</span></button>
+            <p class="form-privacy">Конфиденциальность гарантирована. Никакого спама.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/LocalBusiness">
+    <div class="container footer-inner">
+      <div class="footer-legal">
+        <p>&copy; 2026 <span itemprop="name">Curator.dev</span></p>
+        <p class="footer-taxinfo">Плательщик НПД (Самозанятый) <span itemprop="employee">Гильфанов Руслан Ильфатович</span> • ИНН: 183405710590</p>
+      </div>
+      <div class="footer-links">
+        <span itemprop="telephone" style="display:none;">+7 (999) 000-00-00</span>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="display:none;">
+          <span itemprop="addressLocality">Москва / Санкт-Петербург</span>,
+          <span itemprop="addressCountry">RU</span>
+        </span>
+        <a href="privacy.html" target="_blank" class="footer-link">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Mobile Floating CTA -->
+  <div class="mobile-cta reveal" aria-hidden="true">
+    <a href="#contact" class="btn btn-primary magnetic-btn">Получить стратегию →</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#0A0A0A"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="800" font-size="18" fill="#fff" letter-spacing="-0.04em">C</text>
+  <circle cx="24" cy="24" r="3" fill="#0052FF"/>
+</svg>

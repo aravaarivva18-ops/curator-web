@@ -1,0 +1,36 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "CuratorDevExpert",
+  "name_for_human": "Curator.dev — Expert Packaging & Web Development",
+  "description_for_model": "Expert service for high-end web development, expert experience packaging, Telegram bot creation, and marketing analytics. Can handle projects from landing pages to complex SaaS and bot ecosystems.",
+  "description_for_human": "Профессиональная упаковка экспертов и разработка сайтов, которые продают.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://curator.dev/api/ai-docs.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://curator.dev/favicon.svg",
+  "contact_email": "hello@curator.dev",
+  "legal_info_url": "https://curator.dev/privacy.html",
+  "capabilities": [
+    "web_development",
+    "expert_packaging",
+    "telegram_bot_dev",
+    "marketing_analytics",
+    "conversion_optimization"
+  ],
+  "available_actions": [
+    {
+      "name": "book_consultation",
+      "description": "Initiate a project discussion or consultation booking",
+      "parameters": ["name", "phone", "task_description"]
+    },
+    {
+      "name": "get_portfolio",
+      "description": "Retrieve relevant case studies for a specific industry"
+    }
+  ]
+}
