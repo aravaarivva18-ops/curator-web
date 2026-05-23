@@ -1284,12 +1284,19 @@ a { text-decoration: none; color: inherit; }
 
 /* Tablet & Smaller Screens */
 @media (max-width: 900px) {
+  .hero-section {
+    display: block;
+    min-height: auto;
+    padding: 7rem 0 3rem;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
   }
 
   .hero-visual {
-    height: 240px;
+    height: auto;
+    margin-top: 2.5rem;
   }
 
   .geo-composition {
