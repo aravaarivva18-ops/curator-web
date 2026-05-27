@@ -17,7 +17,25 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, phone, messenger, task, audit_data, website_hp } = req.body;
+    let body = req.body;
+    if (typeof body === 'string') {
+      try {
+        body = JSON.parse(body);
+      } catch (e) {
+        const params = new URLSearchParams(body);
+        body = Object.fromEntries(params.entries());
+      }
+    } else if (body && Buffer.isBuffer(body)) {
+      const rawString = body.toString();
+      try {
+        body = JSON.parse(rawString);
+      } catch (e) {
+        const params = new URLSearchParams(rawString);
+        body = Object.fromEntries(params.entries());
+      }
+    }
+
+    const { name, phone, messenger, task, audit_data, website_hp } = body || {};
 
     // Honeypot validation
     if (website_hp) {
