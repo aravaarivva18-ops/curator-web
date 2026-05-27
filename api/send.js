@@ -28,11 +28,11 @@ export default async function handler(req, res) {
       return res.status(400).json({ status: 'error', message: 'Имя и телефон обязательны.' });
     }
 
-    const botToken = process.env.TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.TELEGRAM_CHAT_ID;
+    const botToken = process.env.TELEGRAM_BOT_TOKEN || '8800019727:AAHYE83Y0zfJXY81q5gB_FRhSNO-5YVaUWc';
+    const chatId = process.env.TELEGRAM_CHAT_ID || '685915071';
 
-    if (!botToken || !chatId) {
-      console.warn('TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID is missing from environment variables.');
+    if (!process.env.TELEGRAM_BOT_TOKEN || !process.env.TELEGRAM_CHAT_ID) {
+      console.warn('TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID is missing from environment variables. Using hardcoded fallback.');
     }
 
     // Format message

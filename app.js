@@ -102,12 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (csrfToken) {
                 formData.append('csrf_token', csrfToken);
             }
+            const payload = new URLSearchParams(formData);
 
             try {
                 // Отправляем данные на наш серверный скрипт
                 const response = await fetch('send.php', {
                     method: 'POST',
-                    body: formData
+                    body: payload
                 });
 
                 if (response.ok) {
