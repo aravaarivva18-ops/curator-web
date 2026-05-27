@@ -19,11 +19,13 @@ header('Content-Type: application/json');
 $allowedDomain = $config['allowed_origin']; // Укажите ваш основной домен
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 
-if (!empty($origin) && strpos($origin, $allowedDomain) !== false) {
+$originHost = parse_url($origin, PHP_URL_HOST);
+if (!empty($origin) && ($originHost === $allowedDomain || $originHost === "www." . $allowedDomain)) {
     header("Access-Control-Allow-Origin: $origin");
 } else {
     // В локальной среде разработки разрешаем, но в продакшене будет строго
-    if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false || strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false) {
+    $host = $_SERVER['HTTP_HOST'] ?? '';
+    if (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false) {
         header('Access-Control-Allow-Origin: *');
     } else {
         http_response_code(403);
@@ -85,18 +87,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'parse_mode' => 'HTML'
     ];
 
-    $options = [
-        'http' => [
-            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method'  => 'POST',
-            'content' => http_build_query($data),
-        ],
-    ];
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    curl_setopt($ch, CURLOPT_TIMEOUT, 3);
+    $result = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
 
-    $context  = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-
-    if ($result) {
+    if ($result && $httpCode === 200) {
         echo json_encode(['status' => 'success', 'message' => 'Заявка успешно отправлена!']);
     } else {
         http_response_code(500);

@@ -6,7 +6,6 @@ if (empty($_SESSION['csrf_token'])) {
 }
 
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *'); // Adjust in production
 
 echo json_encode(['csrf_token' => $_SESSION['csrf_token']]);
 exit;
