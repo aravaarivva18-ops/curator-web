@@ -1318,10 +1318,26 @@ a { text-decoration: none; color: inherit; }
     grid-template-columns: 1fr;
   }
 
+  .bento-item {
+    padding: 1.75rem;
+  }
+
   .bento-item--large,
   .bento-item--wide {
     grid-column: span 1;
     grid-row: span 1;
+  }
+
+  .authority-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-card {
+    padding: 1.75rem;
+  }
+
+  .logo svg {
+    max-width: 150px;
   }
 
   .results-row {
@@ -1444,6 +1460,10 @@ a { text-decoration: none; color: inherit; }
 
   .nav-island {
     padding: 0.6rem 0.75rem 0.6rem 1rem;
+  }
+
+  .authority-card {
+    padding: 2rem 1.5rem;
   }
 }
 
