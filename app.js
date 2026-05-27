@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Отправляем данные на наш серверный скрипт
-                const response = await fetch('send.php', {
+                const response = await fetch('/api/send', {
                     method: 'POST',
                     body: payload
                 });
