@@ -100,8 +100,17 @@ class WebGPUVisuals {
     }
 
     animate(time) {
+        // If mobile, draw once and exit loop to save CPU/GPU cycles
+        if (this.isMobile) {
+            this.drawFrame(time);
+            return;
+        }
+
         requestAnimationFrame((t) => this.animate(t));
-        
+        this.drawFrame(time);
+    }
+
+    drawFrame(time) {
         // Clear canvas
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.ctx.fillStyle = '#FAFAFA';

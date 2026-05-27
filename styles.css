@@ -1367,7 +1367,7 @@ a { text-decoration: none; color: inherit; }
   }
 
   .nav-links {
-    display: none;
+    display: none !important;
     width: 100%;
     flex-direction: column;
     gap: 1.25rem;
@@ -1378,7 +1378,7 @@ a { text-decoration: none; color: inherit; }
   }
   
   .nav-island.is-open .nav-links {
-    display: flex;
+    display: flex !important;
   }
   
   .nav-link:not(.nav-link--cta) {
@@ -1454,16 +1454,31 @@ a { text-decoration: none; color: inherit; }
 /* Mobile Devices */
 @media (max-width: 480px) {
   .proof-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
   .nav-island {
-    padding: 0.6rem 0.75rem 0.6rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+    font-size: 0.9rem;
   }
 
   .authority-card {
-    padding: 2rem 1.5rem;
+    padding: 1.75rem 1.25rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-section {
+    padding-top: 6.5rem !important;
+  }
+
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
