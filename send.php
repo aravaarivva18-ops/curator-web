@@ -1,6 +1,6 @@
 <?php
 /**
- * CURATOR.DEV - Telegram Lead Forwarder
+ * CURATOR-WEB.RU - Telegram Lead Forwarder
  * 
  * Этот скрипт безопасно отправляет данные из формы в ваш Telegram.
  * Поместите этот файл на ваш сервер вместе с index.html.

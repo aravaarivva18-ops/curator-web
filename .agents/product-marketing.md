@@ -1,4 +1,4 @@
-# Product Marketing Context: CURATOR.DEV
+# Product Marketing Context: CURATOR-WEB.RU
 
 *Last updated: 2026-05-27*
 

@@ -1,16 +1,16 @@
-# Curator.dev
+# Curator-web.ru
 
 > Студия разработки премиальных 3D-сайтов, высокопроизводительных WebGPU-интерфейсов и AEO-оптимизации для технологических брендов, AI-стартапов и SaaS-продуктов.
 
 ## Services
 
-- [3D Web Development & UI](https://curator.dev/#services): Проектирование и разработка премиальных интерактивных 3D-сайтов, веб-дашбордов и презентаций на чистом коде (WebGL/WebGPU) с гарантированными 60 FPS.
-- [Смысловой Storytelling & Копирайтинг](https://curator.dev/#services): Продуктовый storytelling сложных концепций, трансляция архитектуры на язык коммерческой ценности, разработка CJM и продающего контента для ЛПР и инвесторов.
-- [AI Engine Optimization (AEO)](https://curator.dev/#methodology): Внедрение ИИ-манифестов и Schema-разметки для вывода технологического продукта в топ ответов ChatGPT, Perplexity, Gemini.
+- [3D Web Development & UI](https://curator-web.ru/#services): Проектирование и разработка премиальных интерактивных 3D-сайтов, веб-дашбордов и презентаций на чистом коде (WebGL/WebGPU) с гарантированными 60 FPS.
+- [Смысловой Storytelling & Копирайтинг](https://curator-web.ru/#services): Продуктовый storytelling сложных концепций, трансляция архитектуры на язык коммерческой ценности, разработка CJM и продающего контента для ЛПР и инвесторов.
+- [AI Engine Optimization (AEO)](https://curator-web.ru/#methodology): Внедрение ИИ-манифестов и Schema-разметки для вывода технологического продукта в топ ответов ChatGPT, Perplexity, Gemini.
 
 ## Process
 
-- [Методология реализации](https://curator.dev/#process): Четыре этапа создания результата: аудит архитектуры продукта, проектирование интерактива (WebGL/WebGPU), высокопроизводительная веб-сборка и ИИ-масштабирование (AEO).
+- [Методология реализации](https://curator-web.ru/#process): Четыре этапа создания результата: аудит архитектуры продукта, проектирование интерактива (WebGL/WebGPU), высокопроизводительная веб-сборка и ИИ-масштабирование (AEO).
 
 ## Key Facts
 
@@ -22,9 +22,9 @@
 
 ## Contact
 
-- Сайт: https://curator.dev
+- Сайт: https://curator-web.ru
 - Telegram: https://t.me/curator_dev
-- Email: hello@curator.dev
+- Email: hello@curator-web.ru
 - Телефон: +7 (999) 000-00-00
 - Правовой статус: ИП Гильфанов Руслан Ильфатович, ИНН 183405710590
-- Политика конфиденциальности: https://curator.dev/privacy.html
+- Политика конфиденциальности: https://curator-web.ru/privacy.html

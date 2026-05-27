@@ -1,4 +1,4 @@
-# Launch Marketing Assets: Curator.dev (AEO Era)
+# Launch Marketing Assets: curator-web.ru (AEO Era)
 
 ## 1. LinkedIn / X (Twitter) Thread Hook
 **Topic:** The Death of SEO and the rise of AEO.
@@ -11,7 +11,7 @@ Here is how I built a site that ИИ-агенты love, and how you can scan you
 - Why ChatGPT doesn't see your site.
 - The role of `ai-agent-manifest.json`.
 - Premium design as a "Trust Signal" for both humans and models.
-- CTA: Link to Curator.dev/audit
+- CTA: Link to curator-web.ru/audit
 
 ---
 
@@ -20,7 +20,7 @@ Here is how I built a site that ИИ-агенты love, and how you can scan you
 **Script:**
 "Привет, [Имя]! Случайно наткнулся на твой проект. 
 Ради интереса проверил, как тебя рекомендует ChatGPT в своей новой выдаче — к сожалению, он тебя пока 'не видит'.
-Я как раз запустил систему Curator.dev, которая упаковывает опыт так, чтобы нейросети считали тебя экспертом №1.
+Я как раз запустил систему curator-web.ru, которая упаковывает опыт так, чтобы нейросети считали тебя экспертом №1.
 Хочешь скину ссылку на наш бесплатный сканер видимости? Покажет, что именно мешает ИИ тебя рекомендовать."
 
 ---
@@ -28,7 +28,7 @@ Here is how I built a site that ИИ-агенты love, and how you can scan you
 ## 3. Product Hunt / Indie Hackers Pitch
 **Tagline:** Not another web studio. The first AEO-native experience engine.
 **Description:** 
-"Curator.dev uses Swiss minimalism and AI-native protocols to ensure your business survives the transition from search engines to answer engines. 
+"curator-web.ru uses Swiss minimalism and AI-native protocols to ensure your business survives the transition from search engines to answer engines. 
 Built with zero bloat and absolute performance."
 
 ---

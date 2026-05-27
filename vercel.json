@@ -1,7 +1,8 @@
 {
   "version": 2,
-  "name": "curator-dev",
+  "name": "curator-web",
   "rewrites": [
     { "source": "/send.php", "destination": "/api/send" }
   ]
 }
+
