@@ -154,12 +154,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // ── 7. Phone Mask ──
+    // ── 7. Phone Mask (Dynamic Lazy Load) ──
     const phoneInput = document.getElementById('phone');
-    if (phoneInput && typeof IMask !== 'undefined') {
-        IMask(phoneInput, {
-            mask: '+{7} (000) 000-00-00'
-        });
+    if (phoneInput) {
+        const initLazyMask = () => {
+            if (typeof IMask !== 'undefined') return;
+            
+            const script = document.createElement('script');
+            script.src = 'imask.js';
+            script.async = true;
+            script.onload = () => {
+                if (typeof IMask !== 'undefined') {
+                    IMask(phoneInput, {
+                        mask: '+{7} (000) 000-00-00'
+                    });
+                    // Instantly trigger focus to keep smooth user keyboard transition
+                    phoneInput.focus();
+                }
+            };
+            document.head.appendChild(script);
+        };
+        
+        phoneInput.addEventListener('focus', initLazyMask, { once: true });
+        phoneInput.addEventListener('pointerdown', initLazyMask, { once: true });
     }
 
     // ── 8. Form Validation & Effects ──

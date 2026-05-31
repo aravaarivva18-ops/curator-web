@@ -160,5 +160,11 @@ class WebGPUVisuals {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new WebGPUVisuals();
+    if (window.requestIdleCallback) {
+        requestIdleCallback(() => {
+            new WebGPUVisuals();
+        });
+    } else {
+        setTimeout(() => new WebGPUVisuals(), 100);
+    }
 });
