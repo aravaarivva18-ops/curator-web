@@ -5,14 +5,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let csrfToken = '';
-    fetch('csrf.php')
-        .then(res => res.json())
-        .then(data => {
-            if (data && data.csrf_token) {
-                csrfToken = data.csrf_token;
-            }
-        })
-        .catch(console.error);
+    let csrfFetched = false;
+
+    const fetchCsrfToken = () => {
+        if (csrfFetched) return;
+        csrfFetched = true;
+        fetch('csrf.php')
+            .then(res => res.json())
+            .then(data => {
+                if (data && data.csrf_token) {
+                    csrfToken = data.csrf_token;
+                }
+            })
+            .catch(console.error);
+    };
+
+    // Trigger CSRF fetch on early interaction to avoid blocking critical render paths
+    const inputs = document.querySelectorAll('#leadForm input, #leadForm textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', fetchCsrfToken, { once: true });
+        input.addEventListener('pointerdown', fetchCsrfToken, { once: true });
+    });
 
     // ── 1. Scroll Progress Indicator ──
     const progressBar = document.querySelector('.scroll-progress');
